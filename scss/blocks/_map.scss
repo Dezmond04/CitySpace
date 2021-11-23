@@ -1,0 +1,22 @@
+.map {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-height: 560px;
+	background-image: url(../img/map.png);
+}
+.map__title {
+	margin-top: -100px;
+	margin-bottom: 20px;
+	font-weight: 500;
+	font-size: 90px;
+	line-height: 110%;
+	letter-spacing: -0.02em;
+}
+.map__subtitle {
+	text-transform: uppercase;
+	font-size: 18px;
+	line-height: 110%;
+	letter-spacing: 0.24em;
+}

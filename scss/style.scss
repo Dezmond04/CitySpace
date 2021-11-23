@@ -1,0 +1,20 @@
+// Подключение переменых
+@import "variables";
+// Подключение базовых настроек
+@import "settings";
+// Подключение normalize
+@import "null";
+// Подключение стилей для блока header
+@import "blocks/header";
+@import "blocks/slider";
+@import "blocks/work-way";
+@import "blocks/experience";
+@import "blocks/footer";
+@import "blocks/fit-out";
+@import "blocks/planning";
+@import "blocks/about";
+@import "blocks/map";
+@import "blocks/service";
+@import "blocks/advantage";
+@import "blocks/project";
+@import "blocks/team";

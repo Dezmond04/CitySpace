@@ -1,0 +1,29 @@
+.slider {
+	display: flex;
+	min-height: 100vh;
+	position: relative;
+}
+.slider__item {
+	width: 100%;
+	background-image: url(../img/slider-item-1.jpg);
+	background-repeat: no-repeat;
+	-moz-background-size: 100%;
+	-webkit-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+}
+.slider__text {
+	position: absolute;
+	left: 3%;
+	bottom: 10%;
+	color: #fff;
+	text-shadow: 0px 4px 32px rgba(0, 0, 0, 0.5);
+	font-family: Inter;
+	font-style: normal;
+	font-weight: 800;
+	font-size: calc((100vw - 320px) / (1920 - 320) * (64 - 32) + 32px);
+	line-height: 110%;
+	& > span {
+		display: block;
+	}
+}
