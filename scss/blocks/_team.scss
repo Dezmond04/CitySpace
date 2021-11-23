@@ -1,6 +1,3 @@
-.team {
-	transition: opacity 1.2s ease;
-}
 .team__title {
 	margin-bottom: 48px;
 	font-weight: bold;
@@ -12,22 +9,14 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	column-gap: 15px;
 	transition: all 1.2s ease;
+	margin-bottom: 32px;
 }
 .team-president__item {
 	position: relative;
 }
-@media (min-width: 992px) {
-	.team-president__info {
-		opacity: 0;
-		transition: all 0.5s ease;
-	}
-	.team-president__item {
-		&:hover .team-president__info {
-			opacity: 1;
-		}
-	}
-}
+
 .team-president__image {
 	width: 100%;
 }
@@ -50,4 +39,91 @@
 	line-height: 110%;
 	letter-spacing: -0.01em;
 	color: rgba(0, 0, 0, 0.5);
+}
+
+.team-worker {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	min-height: 530px;
+}
+.team-worker__item {
+	position: relative;
+	max-height: 155px;
+}
+
+.team-worker__image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.team-worker__info {
+	position: absolute;
+	padding: 5px;
+	bottom: 0px;
+	background-color: rgba(255, 255, 255, 0.5);
+}
+.team-worker__name {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+	font-size: 16px;
+	line-height: 110%;
+	letter-spacing: -0.01em;
+	color: rgba(0, 0, 0, 0.8);
+}
+.team-worker__profession {
+	display: block;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 110%;
+	letter-spacing: -0.01em;
+	color: rgba(0, 0, 0, 0.8);
+}
+
+@media (min-width: 992px) {
+	.team-president__info,
+	.team-worker__info {
+		opacity: 0;
+		transform: translateX(-100%);
+		transition: all 0.3s ease;
+		background-color: transparent;
+	}
+	.team-president__item,
+	.team-worker__item {
+		overflow: hidden;
+		&::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			background-color: rgba(0, 0, 0, 0.8);
+			transition: all 0.3s;
+			z-index: 1;
+		}
+		&:hover::after {
+			opacity: 1;
+		}
+		&:hover .team-president__info {
+			opacity: 1;
+			transform: translateX(0%);
+			z-index: 2;
+		}
+		&:hover .team-worker__info {
+			opacity: 1;
+			transform: translateX(0%);
+			z-index: 2;
+		}
+	}
+	.team-president__name,
+	.team-president__profession,
+	.team-worker__name {
+		color: #fff;
+	}
+	.team-worker__profession {
+		color: rgb(255, 255, 255, 0.6);
+	}
 }
