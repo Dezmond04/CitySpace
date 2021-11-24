@@ -106,7 +106,7 @@ const objectSlider = new Swiper(".object-slider", {
 	// 	}
 	// },
 
-	speed: 800,
+	speed: 400,
 
 	// Navigation arrows
 	navigation: {

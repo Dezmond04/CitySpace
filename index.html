@@ -50,7 +50,7 @@
 								>
 							</li>
 							<li class="header-nav__list">
-								<a href="" class="header-nav__link">Контакты </a>
+								<a data-goto=".contacts__title" href="#" class="header-nav__link">Контакты </a>
 							</li>
 						</ul>
 					</nav>
@@ -878,6 +878,39 @@
 					<button class="object-slider__button object-slider__button_next"></button>
 					<button class="object-slider__button object-slider__button_prev"></button>
 				</div>
+			</div>
+		</div>
+		<div class="contacts">
+			<div class="contacts-wrapper _container">
+				<div class="contacts__info">
+					<h2 class="contacts__title">Контакты</h2>
+					<div class="contacts__info-wrapper">
+						<div class="contacts__info-text">
+							<span class="contacts__text">Телефон</span>
+							<span class="contacts__text">
+								Почта
+							</span>
+							<span class="contacts__text">Офис</span>
+						</div>
+						<div class="contacts__about-us">
+							<a href="tel:+7 (499) 283-19-13" class="contacts__tel">+7 (499) 283-19-13</a>
+							<a href="mailto:office@cityspace.ru" class="contacts__mail">office@cityspace.ru</a>
+							<span class="contacts__address">Лужнецкая набережная, 2/4, строение 17</span>
+						</div>
+					</div>
+				
+					<div class="contacts__map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1589.2758575645614!2d37.57163686832676!3d55.713750665020356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b78deae21f5%3A0x404d16d1ee9618cb!2z0JvRg9C20L3QtdGG0LrQsNGPINC90LDQsS4sIDIvNCDRgdGC0YDQvtC10L3QuNC1IDE3LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5Mjcw!5e0!3m2!1sru!2sua!4v1637773223705!5m2!1sru!2sua" width="592" height="321" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+					</div>
+				</div>
+				<form action="#" class="contacts__form form">
+					<h2 class="form__title">Оставьте заявку, чтобы обсудить ваш проект</h2>
+					<p class="form__text">В самое ближайшее время менеджер свяжется с вами и проконсультирует по деталям проекта</p>
+					<input type="text" class="form__name" placeholder="Как к вам обращаться?">
+					<input type="tel" class="form__number" placeholder='+7 ___ ___-__-__'>
+					<textarea  class="form__message" placeholder='Сообщение (не обязательно)'></textarea>
+					<button class="form__button">Оставить заявку</button>
+				</form>
 			</div>
 		</div>
 			<footer class="footer">
