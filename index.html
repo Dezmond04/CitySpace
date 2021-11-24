@@ -10,6 +10,7 @@
 			href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
 			rel="stylesheet"
 		/>
+		<link rel="stylesheet" href="css/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<title>City Space</title>
 	</head>
@@ -71,13 +72,71 @@
 				</div>
 			</header>
 			<div class="main">
-				<div class="slider">
-					<div class="slider__item">
-						<div class="slider__text">
-							Комплексный подход <span>к проектированию</span> и реализации
-							пространства
+				<div class="slider-main">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper slider-main__wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide slider-main__item">
+							<img
+								src="img/slider-item-1.jpg"
+								alt=""
+								class="slider-main__image"
+							/>
+							<div class="slider-main__text">
+								Комплексный подход <span>к проектированию</span> и реализации
+								пространства
+							</div>
 						</div>
+						<div class="swiper-slide slider-main__item">
+							<img
+								src="img/slider-item-2.jpg"
+								alt=""
+								class="slider-main__image"
+							/>
+							<div class="slider-main__text">
+								Комплексный подход <span>к проектирова</span> и реализации
+								пространства
+							</div>
+						</div>
+						<div class="swiper-slide slider-main__item">
+							<img
+								src="img/slider-item-3.jpg"
+								alt=""
+								class="slider-main__image"
+							/>
+							<div class="slider-main__text">
+								Комплексный подход <span>к проектирова</span> и реализации
+								пространства
+							</div>
+						</div>
+						<div class="swiper-slide slider-main__item">
+							<img
+								src="img/slider-item-4.jpg"
+								alt=""
+								class="slider-main__image"
+							/>
+							<div class="slider-main__text">
+								Комплексный подход <span>к проектирова</span> и реализации
+								пространства
+							</div>
+						</div>
+						<div class="swiper-slide slider-main__item">
+							<img
+								src="img/slider-item-5.jpg"
+								alt=""
+								class="slider-main__image"
+							/>
+							<div class="slider-main__text">
+								Комплексный подход <span>к проектирова</span> и реализации
+								пространства
+							</div>
+						</div>
+						<!-- If we need pagination -->
+						<div class="swiper-pagination"></div>
+
+						<!-- If we need navigation buttons -->
 					</div>
+					<div class="swiper-pagination"></div>
 				</div>
 
 				<div class="work-way">
@@ -401,12 +460,12 @@
 						<a href="#" class="project__link">Все проекты →</a>
 					</div>
 					<div class="project__wrapper">
-						<div class="project__cart-main cart">
+						<div class="project__card-main card">
 							<div class="card__item">
 								<img
 									src="img/project/card-image-1.jpg"
 									alt="Photo"
-									class="cart__image"
+									class="card__image"
 								/>
 							</div>
 							<a href="#" class="card__link">
@@ -419,7 +478,7 @@
 								<img
 									src="img/project/card-image-2.jpg"
 									alt="Photo"
-									class="cart__image"
+									class="card__image"
 								/>
 							</div>
 							<a href="#" class="card__link">
@@ -432,7 +491,7 @@
 								<img
 									src="img/project/card-image-3.jpg"
 									alt="Photo"
-									class="cart__image"
+									class="card__image"
 								/>
 							</div>
 							<a href="#" class="card__link">
@@ -445,7 +504,7 @@
 								<img
 									src="img/project/card-image-4.jpg"
 									alt="Photo"
-									class="cart__image"
+									class="card__image"
 								/>
 							</div>
 							<a href="#" class="card__link">
@@ -458,7 +517,7 @@
 								<img
 									src="img/project/card-image-5.jpg"
 									alt="Photo"
-									class="cart__image"
+									class="card__image"
 								/>
 							</div>
 							<a href="#" class="card__link">
@@ -471,7 +530,7 @@
 								<img
 									src="img/project/card-image-6.jpg"
 									alt="Photo"
-									class="cart__image"
+									class="card__image"
 								/>
 							</div>
 							<a href="#" class="card__link">
@@ -484,7 +543,7 @@
 								<img
 									src="img/project/card-image-7.jpg"
 									alt="Photo"
-									class="cart__image"
+									class="card__image"
 								/>
 							</div>
 							<a href="#" class="card__link">
@@ -733,6 +792,94 @@
 					</div>
 				</div>
 			</div>
+			<div class="objects">
+				<div class="objects-container _container">
+				<div class="objects__title-wrapper">
+					<h2 class="objects__title">
+						Проведем экскурсию по реализованным проектам
+					</h2>
+					<div class="objects__subtitle">
+						350 <span>более 350 объектов уже готовы к показу</span>
+					</div>
+				</div>
+				<span class="objects__line"></span>
+				<p class="objects__text">
+					Не все клиенты готовы публиковать свои данные, и мы с большим
+					уважением относимся к их конфиденциальности. Однако отзывы и
+					рекомендации для нас очень важны! Поэтому нашим потенциальным клиентам
+					мы даем уникальную возможность встретиться непосредственно с
+					представителями наших заказчиков на территории готовых объектов.
+				</p>
+			</div>
+				<div class="object-slider ">					
+					<div class="swiper-wrapper object-slider__wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide object-slider__item">
+							<img
+								src="img/object-slider/object-slider-item-1.jpg"
+								alt="Photo"
+								class="object-slider__image"
+							/>
+							<h4 class="object-slider__text">
+								Шоу-рум и учебный центр компании Sono Russ
+							
+						</div>
+						<div class="swiper-slide object-slider__item">
+							<img
+								src="img/object-slider/object-slider-item-2.jpg"
+								alt="Photo"
+								class="object-slider__image"
+							/>
+							<h4 class="object-slider__text">
+								Шоу-рум и учебный центр компании Sono Russ
+							
+						</div>
+						<div class="swiper-slide object-slider__item">
+							<img
+								src="img/object-slider/object-slider-item-3.jpg"
+								alt="Photo"
+								class="object-slider__image"
+							/>
+							<h4 class="object-slider__text">
+								Шоу-рум и учебный центр компании Sono Russ
+							
+						</div>
+						<div class="swiper-slide object-slider__item">
+							<img
+								src="img/object-slider/object-slider-item-4.jpg"
+								alt="Photo"
+								class="object-slider__image"
+							/>
+							<h4 class="object-slider__text">
+								Шоу-рум и учебный центр компании Sono Russ
+							
+						</div>
+						<div class="swiper-slide object-slider__item">
+							<img
+								src="img/object-slider/object-slider-item-5.jpg"
+								alt="Photo"
+								class="object-slider__image"
+							/>
+							<h4 class="object-slider__text">
+								Шоу-рум и учебный центр компании Sono Russ
+							
+						</div>
+						<div class="swiper-slide object-slider__item">
+							<img
+								src="img/object-slider/object-slider-item-6.jpg"
+								alt="Photo"
+								class="object-slider__image"
+							/>
+							<h4 class="object-slider__text">
+								Шоу-рум и учебный центр компании Sono Russ
+							
+						</div>	
+					</div>
+					<button class="object-slider__button object-slider__button_next"></button>
+					<button class="object-slider__button object-slider__button_prev"></button>
+				</div>
+			</div>
+		</div>
 			<footer class="footer">
 				<div class="footer-container _container">
 					<div class="footer-logo">
@@ -769,8 +916,9 @@
 						<span>© 2013-2021</span> Copyright CITY SPACE
 					</div>
 				</div>
+				
 			</footer>
-		</div>
-		<script src="js/script.js"></script>
+			<script src="js/swiper-bundle.min.js"></script>
+			<script src="js/script.js"></script>
 	</body>
 </html>
