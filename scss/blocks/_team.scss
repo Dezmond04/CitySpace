@@ -35,6 +35,7 @@
 	font-size: 18px;
 	line-height: 110%;
 	letter-spacing: -0.01em;
+	color: #000;
 }
 .team-president__profession {
 	display: block;
@@ -48,8 +49,11 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	column-gap: 15px;
+	row-gap: 30px;
 	min-height: 530px;
 }
+
 .team-worker__item {
 	position: relative;
 	max-height: 155px;
@@ -83,17 +87,31 @@
 	letter-spacing: -0.01em;
 	color: rgba(0, 0, 0, 0.8);
 }
+.team-president__link {
+	display: block;
+	height: 100%;
+	z-index: 15;
+	cursor: pointer;
+}
+.team-worker__link {
+	display: block;
+	height: 100%;
+	width: 100%;
+	z-index: 25;
+	cursor: pointer;
+}
 
 @media (min-width: 992px) {
 	.team-president__info,
 	.team-worker__info {
 		opacity: 0;
-		transform: translateX(-100%);
+		visibility: hidden;
+		transform: translateX(-60%);
 		transition: all 0.3s ease;
 		background-color: transparent;
 	}
-	.team-president__item,
-	.team-worker__item {
+	.team-president__link,
+	.team-worker__link {
 		overflow: hidden;
 		&::after {
 			content: "";
@@ -103,24 +121,29 @@
 			width: 100%;
 			height: 100%;
 			opacity: 0;
+			visibility: hidden;
 			background-color: rgba(0, 0, 0, 0.8);
 			transition: all 0.3s;
 			z-index: 1;
 		}
 		&:hover::after {
 			opacity: 1;
+			visibility: visible;
 		}
 		&:hover .team-president__info {
 			opacity: 1;
+			visibility: visible;
 			transform: translateX(0%);
 			z-index: 2;
 		}
 		&:hover .team-worker__info {
 			opacity: 1;
+			visibility: visible;
 			transform: translateX(0%);
 			z-index: 2;
 		}
 	}
+
 	.team-president__name,
 	.team-president__profession,
 	.team-worker__name {
@@ -128,5 +151,70 @@
 	}
 	.team-worker__profession {
 		color: rgb(255, 255, 255, 0.6);
+	}
+}
+
+@media (max-width: 1200px) {
+	.team {
+		&-worker {
+			&__item {
+				flex: 0 0 18%;
+			}
+			&__item:nth-child(-n + 3) {
+				display: none;
+			}
+		}
+	}
+}
+@media (max-width: 768px) {
+	.team {
+		&-worker {
+			&__item {
+				flex: 0 0 22%;
+			}
+			&__item:nth-child(-n + 6) {
+				display: none;
+			}
+		}
+	}
+}
+@media (max-width: 640px) {
+	.team {
+		padding: 40px 0;
+		&__title {
+			font-size: 32px;
+		}
+		&-president {
+			flex-wrap: wrap;
+			row-gap: 20px;
+			&__name {
+				font-size: 16px;
+			}
+			&__prfession {
+				font-size: 14px;
+			}
+			&__item {
+				position: relative;
+				flex: 0 0 100%;
+				height: 300px;
+			}
+			&__image {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		&-worker {
+			max-height: auto;
+			&__item {
+				flex: 0 0 45%;
+			}
+			&__item:nth-child(-n + 10) {
+				display: none;
+			}
+		}
 	}
 }

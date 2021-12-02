@@ -7,12 +7,12 @@
 	display: flex;
 }
 .footer-nav__list:not(:last-child) {
-	margin-right: 32px;
+	@include adaptiv-value(margin-right, 32, 10, 3);
 }
 .footer-nav__link {
 	color: rgba(0, 0, 0, 0.5);
 	font-weight: 500;
-	font-size: 15px;
+	@include adaptiv-value(font-size, 15, 12, 3);
 	line-height: 110%;
 	letter-spacing: -0.02em;
 	transition: all 0.2s ease 0s;
@@ -20,7 +20,29 @@
 		color: #88c558;
 	}
 }
+.footer-info {
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 130%;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+	color: rgba(0, 0, 0, 0.3);
+}
 .footer-info > span {
 	display: block;
 	text-align: right;
+}
+
+@media (max-width: 992px) {
+	.footer-nav {
+		display: none;
+	}
+}
+
+@media (max-width: 640px) {
+	.footer {
+		&-info {
+			font-size: 8px;
+		}
+	}
 }

@@ -3,6 +3,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	@include adaptiv-value(min-height, 560, 400, 3);
 	min-height: 560px;
 	background-image: url(../img/map.png);
 }
@@ -11,6 +12,7 @@
 	margin-bottom: 20px;
 	font-weight: 500;
 	font-size: 90px;
+	@include adaptiv-value(font-size, 90, 30, 3);
 	line-height: 110%;
 	letter-spacing: -0.02em;
 }
@@ -19,4 +21,17 @@
 	font-size: 18px;
 	line-height: 110%;
 	letter-spacing: 0.24em;
+}
+@media (max-width: 640px) {
+	.map {
+		min-height: 480px;
+		background-size: cover;
+		&__title {
+			font-size: 28px;
+		}
+		&__subtitle {
+			font-size: 14px;
+			text-align: center;
+		}
+	}
 }

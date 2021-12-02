@@ -16,8 +16,9 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			<header class="header header-fix">
-				<div class="header-wrapper">
+			<header class="header header-fix lock-padding">
+				<div class="header-container _container">
+				<div class="header-wrapper ">
 					<div class="header-logo">
 						<a href="#" class="header-logo__link">
 							<img src="img/logo.png" alt="Logo" class="header-logo__item" />
@@ -54,11 +55,7 @@
 							</li>
 						</ul>
 					</nav>
-					<div class="header-contacts">
-						<div class="header-contacts__adress">
-							Москва, Лужнецкая набережная, 2/4, строение 17
-						</div>
-						<div class="header-contacts__connection">
+					<div class="header-contacts">		
 							<a href="tel:+7 495 293-39-21" class="header-contacts__tel"
 								>+7 495 293-39-21</a
 							>
@@ -67,9 +64,13 @@
 								class="header-contacts__mail"
 								>office@city-space.ru</a
 							>
-						</div>
 					</div>
+					
 				</div>
+				<div class="header__menu-mobile">
+					<span class="line"></span>
+				</div>
+			</div>
 			</header>
 			<div class="main">
 				<div class="slider-main">
@@ -237,7 +238,7 @@
 						<div class="fit-out__info">
 							<h3 class="fit-out__title">Fit-Out</h3>
 							<div class="fit-out__subtitle-wrapper">
-								<span class="fit-out__subtitle"></span> 1 000 000 м²
+								<span class="fit-out__subtitle">1 000 000 м²</span> 
 								<span class="fit-out__subtitle-project"
 									>реализованных проектов</span
 								>
@@ -557,17 +558,20 @@
 					<h2 class="team__title">Команда City Space</h2>
 					<div class="team-president">
 						<div class="team-president__item">
+							<a href="#popup-1" class="team-president__link popup-link">
 							<img
 								src="img/team/team-image-1.png"
 								alt="Photo"
 								class="team-president__image"
-							/>
+							/>						
 							<div class="team-president__info">
 								<span class="team-president__name">Сергей Борисов</span>
 								<span class="team-president__profession">CEO, основатель</span>
 							</div>
+						</a>
 						</div>
 						<div class="team-president__item">
+							<a href="#popup-2" class="team-president__link popup-link">
 							<img
 								src="img/team/team-image-2.png"
 								alt="Photo"
@@ -577,8 +581,10 @@
 								<span class="team-president__name">Елена Горбунова</span>
 								<span class="team-president__profession">Соучередитель</span>
 							</div>
+						</a>
 						</div>
 						<div class="team-president__item">
+							<a href="#popup-3" class="team-president__link popup-link">
 							<img
 								src="img/team/team-image-3.png"
 								alt="Photo"
@@ -588,10 +594,81 @@
 								<span class="team-president__name">Сергей Борисов</span>
 								<span class="team-president__profession">Соучередитель</span>
 							</div>
+						</a>
+						</div>
+					</div>
+					<div id="popup-1" class="popup">
+						<div class="popup__body">
+							<div class="popup__content">
+								<a href="#" class="popup__close close-popup">X</a>
+								<div class="popup__item">
+									<img src="img/popup-team/popup-team-item-1.png" alt="Photo" class="popup__image">
+								</div>
+								<div class="popup__about">
+									<div class="popup__name">Сергей Борисов</div>
+								<div class="popup__profession">CEO, основатель</div>
+								<div class="popup__text">
+									<span class="popup__text-about">О Себе</span>
+									 
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="popup-2" class="popup">
+						<div class="popup__body">
+							<div class="popup__content">
+								<a href="#" class="popup__close close-popup">X</a>
+								<div class="popup__item">
+									<img src="img/popup-team/popup-team-item-2.png" alt="Photo" class="popup__image">
+								</div>
+								<div class="popup__about">
+									<div class="popup__name">Елена Горбунова</div>
+								<div class="popup__profession">Соучередитель</div>
+								<div class="popup__text">
+									<span class="popup__text-about">О Себе</span>
+									 
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="popup-3" class="popup">
+						<div class="popup__body">
+							<div class="popup__content">
+								<a href="#" class="popup__close close-popup">X</a>
+								<div class="popup__item">
+									<img src="img/popup-team/popup-team-item-3.png" alt="Photo" class="popup__image">
+								</div>
+								<div class="popup__about">
+									<div class="popup__name">Сергей Борисов</div>
+								<div class="popup__profession">Соучередитель</div>
+								<div class="popup__text">
+									<span class="popup__text-about">О Себе</span>
+									 
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+								</div>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="team-worker">
 						<div class="team-worker__item">
+							<a href="#popup-4" class="team-worker__link popup-link">
 							<img
 								src="img/team/team-image-4.jpg"
 								alt="Photo"
@@ -601,19 +678,24 @@
 								<span class="team-worker__name">Name</span>
 								<span class="team-worker__profession">Profession</span>
 							</div>
+						</a>
 						</div>
 						<div class="team-worker__item">
+							<a href="#popup-5" class="team-worker__link popup-link">
 							<img
 								src="img/team/team-image-5.jpg"
 								alt="Photo"
 								class="team-worker__image"
 							/>
 							<div class="team-worker__info">
+								
 								<span class="team-worker__name">Name</span>
 								<span class="team-worker__profession">Profession</span>
 							</div>
+						</a>
 						</div>
 						<div class="team-worker__item">
+							<a href="#popup-6" class="team-worker__link popup-link">
 							<img
 								src="img/team/team-image-6.jpg"
 								alt="Photo"
@@ -623,8 +705,10 @@
 								<span class="team-worker__name">Name</span>
 								<span class="team-worker__profession">Profession</span>
 							</div>
+						</a>
 						</div>
 						<div class="team-worker__item">
+							<a href="#popup-7" class="team-worker__link popup-link">
 							<img
 								src="img/team/team-image-7.jpg"
 								alt="Photo"
@@ -634,8 +718,10 @@
 								<span class="team-worker__name">Name</span>
 								<span class="team-worker__profession">Profession</span>
 							</div>
+						</a>
 						</div>
 						<div class="team-worker__item">
+							<a href="#popup-8" class="team-worker__link popup-link">
 							<img
 								src="img/team/team-image-8.jpg"
 								alt="Photo"
@@ -645,8 +731,10 @@
 								<span class="team-worker__name">Name</span>
 								<span class="team-worker__profession">Profession</span>
 							</div>
+						</a>
 						</div>
 						<div class="team-worker__item">
+							<a href="#popup-9" class="team-worker__link popup-link">
 							<img
 								src="img/team/team-image-9.jpg"
 								alt="Photo"
@@ -656,8 +744,10 @@
 								<span class="team-worker__name">Name</span>
 								<span class="team-worker__profession">Profession</span>
 							</div>
+						</a>
 						</div>
 						<div class="team-worker__item">
+							<a href="#popup-10" class="team-worker__link popup-link">
 							<img
 								src="img/team/team-image-10.jpg"
 								alt="Photo"
@@ -667,8 +757,10 @@
 								<span class="team-worker__name">Name</span>
 								<span class="team-worker__profession">Profession</span>
 							</div>
+						</a>
 						</div>
 						<div class="team-worker__item">
+							<a href="#popup-11" class="team-worker__link popup-link">
 							<img
 								src="img/team/team-image-11.jpg"
 								alt="Photo"
@@ -678,8 +770,10 @@
 								<span class="team-worker__name">Name</span>
 								<span class="team-worker__profession">Profession</span>
 							</div>
+						</a>
 						</div>
 						<div class="team-worker__item">
+							<a href="#popup-12" class="team-worker__link popup-link">
 							<img
 								src="img/team/team-image-12.jpg"
 								alt="Photo"
@@ -689,8 +783,10 @@
 								<span class="team-worker__name">Name</span>
 								<span class="team-worker__profession">Profession</span>
 							</div>
+						</a>
 						</div>
 						<div class="team-worker__item">
+							<a href="#popup-13" class="team-worker__link popup-link">
 							<img
 								src="img/team/team-image-13.jpg"
 								alt="Photo"
@@ -700,8 +796,10 @@
 								<span class="team-worker__name">Name</span>
 								<span class="team-worker__profession">Profession</span>
 							</div>
+						</a>
 						</div>
 						<div class="team-worker__item">
+							<a href="#popup-14" class="team-worker__link popup-link">
 							<img
 								src="img/team/team-image-14.jpg"
 								alt="Photo"
@@ -711,8 +809,10 @@
 								<span class="team-worker__name">Name</span>
 								<span class="team-worker__profession">Profession</span>
 							</div>
+						</a>
 						</div>
 						<div class="team-worker__item">
+							<a href="#popup-15" class="team-worker__link popup-link">
 							<img
 								src="img/team/team-image-15.jpg"
 								alt="Photo"
@@ -722,8 +822,10 @@
 								<span class="team-worker__name">Name</span>
 								<span class="team-worker__profession">Profession</span>
 							</div>
+						</a>
 						</div>
 						<div class="team-worker__item">
+							<a href="#popup-16" class="team-worker__link popup-link">
 							<img
 								src="img/team/team-image-16.jpg"
 								alt="Photo"
@@ -733,8 +835,10 @@
 								<span class="team-worker__name">Name</span>
 								<span class="team-worker__profession">Profession</span>
 							</div>
+						</a>
 						</div>
 						<div class="team-worker__item">
+							<a href="#popup-17" class="team-worker__link popup-link">
 							<img
 								src="img/team/team-image-17.jpg"
 								alt="Photo"
@@ -744,19 +848,23 @@
 								<span class="team-worker__name">Name</span>
 								<span class="team-worker__profession">Profession</span>
 							</div>
+						</a>
 						</div>
 						<div class="team-worker__item">
+							<a href="#popup-18" class="team-worker__link popup-link">
 							<img
 								src="img/team/team-image-18.jpg"
 								alt="Photo"
 								class="team-worker__image"
 							/>
 							<div class="team-worker__info">
-								<<span class="team-worker__name">Name</span>
+								<span class="team-worker__name">Name</span>
 								<span class="team-worker__profession">Profession</span>
 							</div>
+						</a>
 						</div>
 						<div class="team-worker__item">
+							<a href="#popup-19" class="team-worker__link popup-link">
 							<img
 								src="img/team/team-image-19.jpg"
 								alt="Photo"
@@ -766,8 +874,10 @@
 								<span class="team-worker__name">Name</span>
 								<span class="team-worker__profession">Profession</span>
 							</div>
+						</a>
 						</div>
 						<div class="team-worker__item">
+							<a href="#popup-20" class="team-worker__link popup-link">
 							<img
 								src="img/team/team-image-20.jpg"
 								alt="Photo"
@@ -777,8 +887,10 @@
 								<span class="team-worker__name">Name</span>
 								<span class="team-worker__profession">Profession</span>
 							</div>
+							</a>
 						</div>
 						<div class="team-worker__item">
+							<a href="#popup-21" class="team-worker__link popup-link">
 							<img
 								src="img/team/team-image-21.jpg"
 								alt="Photo"
@@ -787,6 +899,385 @@
 							<div class="team-worker__info">
 								<span class="team-worker__name">Name</span>
 								<span class="team-worker__profession">Profession</span>
+							</div>
+						</a>
+						</div>
+					</div>
+					<div id="popup-4" class="popup">
+						<div class="popup__body">
+							<div class="popup__content">
+								<a href="#" class="popup__close close-popup">X</a>
+								<div class="popup__item">
+									<img src="img/popup-team/popup-team-item-4.png" alt="Photo" class="popup__image">
+								</div>
+								<div class="popup__about">
+									<div class="popup__name">Name</div>
+								<div class="popup__profession">Profession</div>
+								<div class="popup__text">
+									<span class="popup__text-about">О Себе</span>
+									 
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!									
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="popup-5" class="popup">
+						<div class="popup__body">
+							<div class="popup__content">
+								<a href="#" class="popup__close close-popup">X</a>
+								<div class="popup__item">
+									<img src="img/popup-team/popup-team-item-5.png" alt="Photo" class="popup__image">
+								</div>
+								<div class="popup__about">
+									<div class="popup__name">Name</div>
+								<div class="popup__profession">Profession</div>
+								<div class="popup__text">
+									<span class="popup__text-about">О Себе</span>
+									 
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!									
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="popup-6" class="popup">
+						<div class="popup__body">
+							<div class="popup__content">
+								<a href="#" class="popup__close close-popup">X</a>
+								<div class="popup__item">
+									<img src="img/popup-team/popup-team-item-6.png" alt="Photo" class="popup__image">
+								</div>
+								<div class="popup__about">
+									<div class="popup__name">Name</div>
+								<div class="popup__profession">Profession</div>
+								<div class="popup__text">
+									<span class="popup__text-about">О Себе</span>
+									 
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!									
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="popup-7" class="popup">
+						<div class="popup__body">
+							<div class="popup__content">
+								<a href="#" class="popup__close close-popup">X</a>
+								<div class="popup__item">
+									<img src="img/popup-team/popup-team-item-7.png" alt="Photo" class="popup__image">
+								</div>
+								<div class="popup__about">
+									<div class="popup__name">Name</div>
+								<div class="popup__profession">Profession</div>
+								<div class="popup__text">
+									<span class="popup__text-about">О Себе</span>
+									 
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!									
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="popup-8" class="popup">
+						<div class="popup__body">
+							<div class="popup__content">
+								<a href="#" class="popup__close close-popup">X</a>
+								<div class="popup__item">
+									<img src="img/popup-team/popup-team-item-8.png" alt="Photo" class="popup__image">
+								</div>
+								<div class="popup__about">
+									<div class="popup__name">Name</div>
+								<div class="popup__profession">Profession</div>
+								<div class="popup__text">
+									<span class="popup__text-about">О Себе</span>
+									 
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!									
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="popup-9" class="popup">
+						<div class="popup__body">
+							<div class="popup__content">
+								<a href="#" class="popup__close close-popup">X</a>
+								<div class="popup__item">
+									<img src="img/popup-team/popup-team-item-9.png" alt="Photo" class="popup__image">
+								</div>
+								<div class="popup__about">
+									<div class="popup__name">Name</div>
+								<div class="popup__profession">Profession</div>
+								<div class="popup__text">
+									<span class="popup__text-about">О Себе</span>
+									 
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!									
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="popup-10" class="popup">
+						<div class="popup__body">
+							<div class="popup__content">
+								<a href="#" class="popup__close close-popup">X</a>
+								<div class="popup__item">
+									<img src="img/popup-team/popup-team-item-10.png" alt="Photo" class="popup__image">
+								</div>
+								<div class="popup__about">
+									<div class="popup__name">Name</div>
+								<div class="popup__profession">Profession</div>
+								<div class="popup__text">
+									<span class="popup__text-about">О Себе</span>
+									 
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!									
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="popup-11" class="popup">
+						<div class="popup__body">
+							<div class="popup__content">
+								<a href="#" class="popup__close close-popup">X</a>
+								<div class="popup__item">
+									<img src="img/popup-team/popup-team-item-11.png" alt="Photo" class="popup__image">
+								</div>
+								<div class="popup__about">
+									<div class="popup__name">Name</div>
+								<div class="popup__profession">Profession</div>
+								<div class="popup__text">
+									<span class="popup__text-about">О Себе</span>
+									 
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!									
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="popup-12" class="popup">
+						<div class="popup__body">
+							<div class="popup__content">
+								<a href="#" class="popup__close close-popup">X</a>
+								<div class="popup__item">
+									<img src="img/popup-team/popup-team-item-12.png" alt="Photo" class="popup__image">
+								</div>
+								<div class="popup__about">
+									<div class="popup__name">Name</div>
+								<div class="popup__profession">Profession</div>
+								<div class="popup__text">
+									<span class="popup__text-about">О Себе</span>
+									 
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!									
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="popup-13" class="popup">
+						<div class="popup__body">
+							<div class="popup__content">
+								<a href="#" class="popup__close close-popup">X</a>
+								<div class="popup__item">
+									<img src="img/popup-team/popup-team-item-13.png" alt="Photo" class="popup__image">
+								</div>
+								<div class="popup__about">
+									<div class="popup__name">Name</div>
+								<div class="popup__profession">Profession</div>
+								<div class="popup__text">
+									<span class="popup__text-about">О Себе</span>
+									 
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!									
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="popup-14" class="popup">
+						<div class="popup__body">
+							<div class="popup__content">
+								<a href="#" class="popup__close close-popup">X</a>
+								<div class="popup__item">
+									<img src="img/popup-team/popup-team-item-14.png" alt="Photo" class="popup__image">
+								</div>
+								<div class="popup__about">
+									<div class="popup__name">Name</div>
+								<div class="popup__profession">Profession</div>
+								<div class="popup__text">
+									<span class="popup__text-about">О Себе</span>
+									 
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!									
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="popup-15" class="popup">
+						<div class="popup__body">
+							<div class="popup__content">
+								<a href="#" class="popup__close close-popup">X</a>
+								<div class="popup__item">
+									<img src="img/popup-team/popup-team-item-15.png" alt="Photo" class="popup__image">
+								</div>
+								<div class="popup__about">
+									<div class="popup__name">Name</div>
+								<div class="popup__profession">Profession</div>
+								<div class="popup__text">
+									<span class="popup__text-about">О Себе</span>
+									 
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!									
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="popup-16" class="popup">
+						<div class="popup__body">
+							<div class="popup__content">
+								<a href="#" class="popup__close close-popup">X</a>
+								<div class="popup__item">
+									<img src="img/popup-team/popup-team-item-16.png" alt="Photo" class="popup__image">
+								</div>
+								<div class="popup__about">
+									<div class="popup__name">Name</div>
+								<div class="popup__profession">Profession</div>
+								<div class="popup__text">
+									<span class="popup__text-about">О Себе</span>
+									 
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!									
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="popup-17" class="popup">
+						<div class="popup__body">
+							<div class="popup__content">
+								<a href="#" class="popup__close close-popup">X</a>
+								<div class="popup__item">
+									<img src="img/popup-team/popup-team-item-17.png" alt="Photo" class="popup__image">
+								</div>
+								<div class="popup__about">
+									<div class="popup__name">Name</div>
+								<div class="popup__profession">Profession</div>
+								<div class="popup__text">
+									<span class="popup__text-about">О Себе</span>
+									 
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!									
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="popup-18" class="popup">
+						<div class="popup__body">
+							<div class="popup__content">
+								<a href="#" class="popup__close close-popup">X</a>
+								<div class="popup__item">
+									<img src="img/popup-team/popup-team-item-18.png" alt="Photo" class="popup__image">
+								</div>
+								<div class="popup__about">
+									<div class="popup__name">Name</div>
+								<div class="popup__profession">Profession</div>
+								<div class="popup__text">
+									<span class="popup__text-about">О Себе</span>
+									 
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!									
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="popup-19" class="popup">
+						<div class="popup__body">
+							<div class="popup__content">
+								<a href="#" class="popup__close close-popup">X</a>
+								<div class="popup__item">
+									<img src="img/popup-team/popup-team-item-19.png" alt="Photo" class="popup__image">
+								</div>
+								<div class="popup__about">
+									<div class="popup__name">Name</div>
+								<div class="popup__profession">Profession</div>
+								<div class="popup__text">
+									<span class="popup__text-about">О Себе</span>
+									 
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!									
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="popup-20" class="popup">
+						<div class="popup__body">
+							<div class="popup__content">
+								<a href="#" class="popup__close close-popup">X</a>
+								<div class="popup__item">
+									<img src="img/popup-team/popup-team-item-20.png" alt="Photo" class="popup__image">
+								</div>
+								<div class="popup__about">
+									<div class="popup__name">Name</div>
+								<div class="popup__profession">Profession</div>
+								<div class="popup__text">
+									<span class="popup__text-about">О Себе</span>
+									 
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!									
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="popup-21" class="popup">
+						<div class="popup__body">
+							<div class="popup__content">
+								<a href="#" class="popup__close close-popup">X</a>
+								<div class="popup__item">
+									<img src="img/popup-team/popup-team-item-21.png" alt="Photo" class="popup__image">
+								</div>
+								<div class="popup__about">
+									<div class="popup__name">Name</div>
+								<div class="popup__profession">Profession</div>
+								<div class="popup__text">
+									<span class="popup__text-about">О Себе</span>
+									 
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut enim vero veritatis velit assumenda soluta sed ad, omnis alias placeat debitis voluptas ea ipsam dolorum error dolorem, a blanditiis! Quidem!									
+								</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -900,15 +1391,16 @@
 					</div>
 				
 					<div class="contacts__map">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1589.2758575645614!2d37.57163686832676!3d55.713750665020356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b78deae21f5%3A0x404d16d1ee9618cb!2z0JvRg9C20L3QtdGG0LrQsNGPINC90LDQsS4sIDIvNCDRgdGC0YDQvtC10L3QuNC1IDE3LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5Mjcw!5e0!3m2!1sru!2sua!4v1637773223705!5m2!1sru!2sua" width="592" height="321" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1589.2758575645614!2d37.57163686832676!3d55.713750665020356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54b78deae21f5%3A0x404d16d1ee9618cb!2z0JvRg9C20L3QtdGG0LrQsNGPINC90LDQsS4sIDIvNCDRgdGC0YDQvtC10L3QuNC1IDE3LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTE5Mjcw!5e0!3m2!1sru!2sua!4v1637773223705!5m2!1sru!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 					</div>
 				</div>
-				<form action="#" class="contacts__form form">
+				<form id="form" action="#" class="contacts__form form">
 					<h2 class="form__title">Оставьте заявку, чтобы обсудить ваш проект</h2>
 					<p class="form__text">В самое ближайшее время менеджер свяжется с вами и проконсультирует по деталям проекта</p>
-					<input type="text" class="form__name" placeholder="Как к вам обращаться?">
-					<input type="tel" class="form__number" placeholder='+7 ___ ___-__-__'>
-					<textarea  class="form__message" placeholder='Сообщение (не обязательно)'></textarea>
+					<input type="text" class="form__name _req" placeholder="Как к вам обращаться?" name="name">
+					<input type="tel" class="form__number _req _email" placeholder='+7 ___ ___-__-__' name="phone">
+					<span class="form__error"></span>
+					<textarea  class="form__message" placeholder='Сообщение (не обязательно)' name="message"></textarea>
 					<button class="form__button">Оставить заявку</button>
 				</form>
 			</div>
@@ -951,6 +1443,7 @@
 				</div>
 				
 			</footer>
+			<script src="js/popups.js"></script>
 			<script src="js/swiper-bundle.min.js"></script>
 			<script src="js/script.js"></script>
 	</body>

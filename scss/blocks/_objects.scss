@@ -9,6 +9,7 @@
 		font-weight: bold;
 		max-width: 810px;
 		font-size: 48px;
+		@include adaptiv-value(font-size, 48, 24, 3);
 		line-height: 110%;
 		letter-spacing: -0.01em;
 	}
@@ -45,7 +46,7 @@
 	}
 }
 .swiper-slide {
-	width: 280px;
+	width: 100%;
 }
 .object-slider {
 	position: relative;
@@ -75,11 +76,13 @@
 		pointer-events: none;
 	}
 	&__item {
-		width: 280px;
+		width: 100%;
 	}
 	&__image {
 		width: 100%;
+		height: 100%;
 		margin-bottom: 12px;
+		object-fit: cover;
 	}
 	&__text {
 		font-weight: 500;
@@ -102,22 +105,111 @@
 		pointer-events: auto;
 		&_prev {
 			position: absolute;
-			top: 76px;
+			bottom: 50%;
 			left: 60px;
 			z-index: 10;
 			background-image: url(../img/object-slider/arrow-left.svg);
 			background-repeat: no-repeat;
 			background-position: center;
-			transform: rotate(360deg);
+			transform: rotate(360deg) translateY(-50%);
 		}
 		&_next {
 			position: absolute;
-			top: 76px;
+			bottom: 50%;
 			right: 60px;
 			background-image: url(../img/object-slider/arrow-left.svg);
 			background-repeat: no-repeat;
 			background-position: center;
 			z-index: 10;
+			transform: rotate(180deg) translateY(50%);
+		}
+	}
+}
+@media (max-width: 992px) {
+	.objects {
+		&__title {
+			flex: 0 0 70%;
+			margin-bottom: 20px;
+			max-width: 100%;
+			&-wrapper {
+				flex-wrap: wrap;
+			}
+		}
+		&__subtitle {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			column-gap: 20px;
+			flex: 0 0 100%;
+		}
+		&__text {
+			text-align: center;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.objects {
+		&__title {
+			flex: 0 0 90%;
+		}
+	}
+	.object-slider {
+		width: 90%;
+		height: 300px;
+		overflow: hidden;
+		margin: auto;
+		&::before,
+		&::after {
+			width: 125px;
+		}
+		&__button {
+			&_prev {
+				transform: translateY(50%);
+			}
+			&_next {
+				transform: rotate(180deg) translateY(-50%);
+			}
+		}
+	}
+}
+@media (max-width: 640px) {
+	.objects {
+		padding-top: 20px;
+		padding-bottom: 40px;
+		&__title {
+			font-size: 32px;
+		}
+		&__subtitle {
+			font-size: 42px;
+		}
+		&__subtitle > span {
+			font-size: 16px;
+		}
+		&__text {
+			font-size: 14px;
+			margin-bottom: 32px;
+		}
+	}
+	.object {
+		&-slider {
+			&__button {
+				width: 30px;
+				height: 30px;
+				background-size: 6px;
+				&_next {
+					right: 5%;
+				}
+				&_prev {
+					left: 5%;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 460px) {
+	.object {
+		&-slider {
+			height: 200px;
 		}
 	}
 }

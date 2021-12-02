@@ -1,7 +1,10 @@
 .about {
 	display: flex;
 	justify-content: space-between;
-	padding: 120px 0 80px;
+	align-items: center;
+	column-gap: 50px;
+	@include adaptiv-value(padding-top, 120, 40, 3);
+	@include adaptiv-value(padding-bottom, 80, 25, 3);
 }
 .about__title {
 	margin-bottom: 40px;
@@ -18,12 +21,35 @@
 	color: rgba(0, 0, 0, 0.8);
 }
 .about__item {
-	position: relative;
 	width: 520px;
 }
 .about__image {
-	position: absolute;
-	left: 0;
-	top: 0;
 	width: 100%;
+}
+@media (max-width: 992px) {
+	.about {
+		flex-wrap: wrap;
+		&__info {
+			width: 100%;
+		}
+		&__text {
+			max-width: 100%;
+			text-align: center;
+			@include adaptiv-value(margin-bottom, 80, 30, 3);
+		}
+		&__item {
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	.about {
+		&__title {
+			font-size: 36px;
+		}
+		&__text {
+			font-size: 14px;
+		}
+	}
 }

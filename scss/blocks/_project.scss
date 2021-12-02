@@ -1,21 +1,23 @@
 .project {
-	padding: 90px 0;
+	@include adaptiv-value(padding-top, 90, 30, 3);
+	@include adaptiv-value(padding-bottom, 90, 30, 3);
 }
 .project__title-wrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin-bottom: 60px;
+	@include adaptiv-value(margin-bottom, 60, 20, 3);
 }
 .project__title {
 	font-weight: bold;
 	font-size: 48px;
+	@include adaptiv-value(font-size, 48, 18, 3);
 	line-height: 110%;
 	letter-spacing: -0.01em;
 }
 .project__link {
 	font-weight: 500;
-	font-size: 20px;
+	@include adaptiv-value(font-size, 20, 14, 3);
 	line-height: 150%;
 	letter-spacing: -0.02em;
 	color: #88c558;
@@ -24,11 +26,14 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	column-gap: 5%;
+	row-gap: 30px;
 	flex-wrap: wrap;
-	min-height: 1600px;
+}
+.project__card {
+	flex: 1 1 45%;
 }
 .card__item {
-	flex: 1 1 592px;
 	margin-bottom: 16px;
 }
 .card__image {
@@ -50,4 +55,19 @@
 	line-height: 110%;
 	letter-spacing: -0.01em;
 	color: rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 640px) {
+	.project {
+		&__title {
+			font-size: 32px;
+		}
+		&__card {
+			flex: 0 0 100%;
+		}
+	}
+	.card {
+		&__link {
+			font-size: 18px;
+		}
+	}
 }
